@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Mahasiswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 2px solid #0288d1;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background: #0288d1;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #e1f5fe;
+        }
+        tr:hover {
+            background: #b3e5fc;
+        }
+        input, button {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            background: #ff6f00;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #e65100;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Soal-Soal Teori HTML</h1>
+        <h3>Pertanyaan seputar tag</h3>
+        <ol>
+            <li>Apa yang dimaksud dengan tag pada HTML?</li>
+            <li>Apa itu pembuka dan penutup tag? Apakah hal tersebut terdapat pada semua jenis tag?</li>
+        </ol>
+        <h3>Pertanyaan seputar element</h3>
+        <ol>
+            <li>Apa yang dimaksud dengan element?</li>
+            <li>Apa yang dimaksud dengan tagname, attribute, dan content pada element?</li>
+            <li>Apakah elemen dapat ditumpuk? Apa yang terjadi bila demikian?</li>
+        </ol>
+
+        <h2>5 Teman Favorit di Kelas</h2>
+        <table>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>NIM</th>
+            </tr>
+            <tr><td>1</td><td>Maida Awlifea</td><td>202332033</td></tr>
+            <tr><td>2</td><td>Violetta Jingga</td><td>202332028</td></tr>
+            <tr><td>3</td><td>Neisya Adila Faradisa</td><td>202332036</td></tr>
+            <tr><td>4</td><td>Amilova Shovagara</td><td>202332077</td></tr>
+            <tr><td>5</td><td>Amanda Nurfadilah</td><td>202332031</td></tr>
+        </table>
+
+        <h1>Formulir Data Mahasiswa</h1>
+        <form>
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required><br>
+            <label for="nim">NIM:</label>
+            <input type="text" id="nim" name="nim" required><br>
+            <label for="jurusan">Jurusan:</label>
+            <input type="text" id="jurusan" name="jurusan" required><br>
+            <button type="submit">Kirim Data</button>
+        </form>
+    </div>
+</body>
+</html>
